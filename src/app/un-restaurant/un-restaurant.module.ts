@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { UnRestaurantPageRoutingModule } from './un-restaurant-routing.module';
 
 import { UnRestaurantPage } from './un-restaurant.page';
+import { SharedModule } from "../shared/shared.module";
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    UnRestaurantPageRoutingModule
-  ],
-  declarations: [UnRestaurantPage]
+    declarations: [UnRestaurantPage],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        UnRestaurantPageRoutingModule,
+        SharedModule
+    ]
 })
 export class UnRestaurantPageModule {}
