@@ -35,7 +35,7 @@ npm-debug.log
 yarn-error.log
 
 #Typescript tableau de routage
-src/app/app-routing.module.ts
+./src/app/app-routing.module.ts
 
 # IDEs and editors
 .idea/
