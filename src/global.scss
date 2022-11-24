@@ -25,10 +25,13 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
+//import Share font
+@import url('https://fonts.googleapis.com/css2?family=Share:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 .titre{
     color: black;
     font-family: 'Qahiri', sans-serif;
-    font-size: 32px;
+    font-size: 42px;
     margin-left: auto;
     margin-right:auto;
 }
