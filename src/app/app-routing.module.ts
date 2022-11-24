@@ -10,11 +10,15 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
-  },  {
+  },
+  {
     path: 'contact',
     loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
   },
-
+  {
+    path: 'un-bateau',
+    loadChildren: () => import('./un-bateau/un-bateau.module').then( m => m.UnBateauPageModule)
+  }
 ];
 
 @NgModule({
