@@ -18,9 +18,12 @@ const routes: Routes = [
   {
     path: 'un-bateau',
     loadChildren: () => import('./un-bateau/un-bateau.module').then( m => m.UnBateauPageModule)
+  },
+  {
+    path: 'une-recette',
+    loadChildren: () => import('./une-recette/une-recette.module').then( m => m.UneRecettePageModule)
   }
 ];
-
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
