@@ -1,0 +1,21 @@
+// .bateaux{
+//     display: block;
+// }
+
+
+@media only screen and (max-width: 600px) {
+    .bateaux-content{
+        margin-top:50%;
+    }
+    .bateaux-button{
+        margin-top:50%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .bateaux-content{
+        margin-top:10%;
+    }
+    .bateaux-button{
+        margin-top:10%;
+    }
+}
