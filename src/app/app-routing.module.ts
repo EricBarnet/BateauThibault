@@ -18,7 +18,11 @@ const routes: Routes = [
   {
     path: 'un-bateau',
     loadChildren: () => import('./un-bateau/un-bateau.module').then( m => m.UnBateauPageModule)
-  }
+  },
+  {
+    path: 'bateaux',
+    loadChildren: () => import('./bateaux/bateaux.module').then( m => m.BateauxPageModule)
+  },
 ];
 
 @NgModule({
