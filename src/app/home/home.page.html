@@ -1,14 +1,54 @@
 <app-header></app-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-title class="titre ion-text-center"> Le Bateau de Thibault </ion-title>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="descriptif-content">
+    <ion-row class="ion-margin-top">
+      <ion-col></ion-col>
+      <ion-col size="8">
+        <ion-text class="ion-text-center">
+          <h3 class="ion-title-center">Vente en direct de notre bateau</h3>
+          <h3 class="ion-title-center">Produits selon la saison</h3>
+          <h3 class="ion-title-center">Livraison sur Paris</h3>
+        </ion-text>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+  </div>
+  <app-information-contact></app-information-contact>
+
+  <div class="bateaux bateaux-button ion-text-center">
+    <ion-row class="ion-margin-top">
+      <ion-col></ion-col>
+      <ion-col>
+        <ion-button color="dark" expand="block"><ion-icon slot="start" name="star"></ion-icon>Produits et Promos</ion-button>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col>
+        <ion-button (click)="onGoToListeRestaurants()" color="dark" expand="block">Restaurants</ion-button>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col>
+        <ion-button (click)="onGoToListeRecettes()" color="dark" expand="block">Recettes</ion-button>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col>
+        <ion-button (click)="onGoToBateaux()" color="dark" expand="block">Bateaux</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="onGoToContact()" color="dark" expand="block">Contact</ion-button>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
   </div>
 </ion-content>
