@@ -1,5 +1,10 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Le Bateau de Thibault</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button fill="solid">
+        <ion-icon slot="end" name="home-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title (click)="onGoToHome()">Le Bateau de Thibault</ion-title>
   </ion-toolbar>
 </ion-header>

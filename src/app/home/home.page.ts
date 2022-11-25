@@ -28,5 +28,7 @@ export class HomePage {
     this.router.navigate(['/liste-restaurants']);
   }
 
-  //faire la route pour produits&promos
+  onGoToProduitCategorie(){
+    this.router.navigate(['/produit-categorie']);
+  }
 }

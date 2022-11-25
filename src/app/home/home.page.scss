@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Qahiri&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Share:ital,wght@1,700&display=swap");
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
   .descriptif-content {
-    margin-top: 50%;
+    margin-top: 15%;
     font-family: "Share", cursive;
     font-weight: bold;
   }
@@ -11,27 +11,20 @@
     margin-top: 50%;
   }
 
-  .liste-boutons {
-    max-width: 1200px;
+  .trois-boutons{
     display: block;
-
+    flex: initial;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .descriptif-content {
-    margin-top: 10%;
+    margin-top: 5%;
     font-family: "Share", cursive;
     font-weight: bold;
     font-style: italic;
   }
   .descriptif-button {
     margin-top: 10%;
-  }
-
-  .liste-boutons {
-    max-width: 1200px;
-    display: block;
-
   }
 }
