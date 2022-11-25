@@ -11,6 +11,12 @@
           "script[nomodule]"
         ]
       }
+    ],
+    "axe/text-alternatives": [
+      "default",
+      {
+        "image-alt": "off"
+      }
     ]
   }
 }
