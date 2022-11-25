@@ -18,37 +18,55 @@
   </div>
   <app-information-contact></app-information-contact>
 
-  <div class="bateaux bateaux-button ion-text-center">
+  <div class="liste-boutons ion-text-center">
     <ion-row class="ion-margin-top">
       <ion-col></ion-col>
       <ion-col>
-        <ion-button color="dark" expand="block"><ion-icon slot="start" name="star"></ion-icon>Produits et Promos</ion-button>
+        <ion-button color="dark" expand="block">
+          <ion-icon slot="start" name="star"></ion-icon>
+          Produits et Promos
+        </ion-button>
       </ion-col>
       <ion-col></ion-col>
     </ion-row>
     <ion-row>
       <ion-col></ion-col>
       <ion-col>
-        <ion-button (click)="onGoToListeRestaurants()" color="dark" expand="block">Restaurants</ion-button>
+        <ion-button
+          (click)="onGoToListeRestaurants()"
+          color="dark"
+          expand="block"
+          >Restaurants</ion-button
+        >
       </ion-col>
       <ion-col></ion-col>
     </ion-row>
     <ion-row>
       <ion-col></ion-col>
       <ion-col>
-        <ion-button (click)="onGoToListeRecettes()" color="dark" expand="block">Recettes</ion-button>
+        <ion-button (click)="onGoToListeRecettes()" color="dark" expand="block"
+          >Recettes</ion-button
+        >
       </ion-col>
       <ion-col></ion-col>
     </ion-row>
-    <ion-row>
-      <ion-col></ion-col>
-      <ion-col size="6" size-md="4" size-lg="2">
-        <ion-button (click)="onGoToBateaux()" color="dark" expand="block">Bateaux</ion-button>
-      </ion-col>
-      <ion-col size="6" size-md="4" size-lg="2">
-        <ion-button (click)="onGoToContact()" color="dark" expand="block">Contact</ion-button>
-      </ion-col>
-      <ion-col></ion-col>
-    </ion-row>
+    <ion-grid>
+      <ion-row>
+        <ion-col></ion-col>
+        <ion-col></ion-col>
+        <ion-col size="2">
+          <ion-button (click)="onGoToBateaux()" color="dark" expand="block"
+            >Bateaux</ion-button
+          >
+        </ion-col>
+        <ion-col size="2">
+          <ion-button (click)="onGoToContact()" color="dark" expand="block"
+            >Contact</ion-button
+          >
+        </ion-col>
+        <ion-col></ion-col>
+        <ion-col></ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
 </ion-content>
