@@ -1,5 +1,6 @@
-
+<ion-button (click)="test()">Test</ion-button>
 <ion-content>
+  
     <ion-grid>
       <div class="bateaux bateaux-titre ion-text-center">
         <ion-row>
@@ -12,46 +13,41 @@
           <ion-col></ion-col>
         </ion-row>
       </div>
+      
       <div class="bateaux bateaux-button ion-text-center">
         <ion-row class="ion-margin-top">
+          
           <ion-col></ion-col>
-          <ion-col size="4">
-            <ion-button expand="block">Poisson 1        3e</ion-button>
+          <ion-col size="6">
+            <ion-button class="button" expand="block" *ngFor="let categorie of categorieList" (click)="onLoadCategorieProduit(categorie)">
+              {{ categorie.name }}</ion-button>
           </ion-col>
           <ion-col></ion-col> 
         </ion-row>
         
-        <ion-row>
+         <!-- <ion-row>
           <ion-col></ion-col>  
-        <ion-col size="4"><ion-button expand="block">Poisson 2       25e</ion-button>
+        <ion-col size="4"><ion-button expand="block" *ngFor="let categorie of categorieList" *ngIf="" (click)="onLoadCategorieProduit(produit)">{{ categorie }}</ion-button>
         </ion-col>
           <ion-col></ion-col>
        </ion-row>
         <ion-row>
           <ion-col></ion-col>
           <ion-col size="4">
-            <ion-button expand="block">Poisson 3     5e</ion-button>
+            <ion-button expand="block" *ngFor="let categorie of categorieList" (click)="onLoadCategorieProduit(produit)">{{ categorie }}</ion-button>
 
           </ion-col>
           <ion-col></ion-col>
         </ion-row>
         <ion-row>
           <ion-col></ion-col>
-          <ion-col size="4"><ion-button expand="block">Poisson 4     10e</ion-button>
+          <ion-col size="4"><ion-button expand="block" *ngFor="let categorie of categorieList" (click)="onLoadCategorieProduit(produit)">{{ categorie }}</ion-button>
           </ion-col>
           <ion-col></ion-col>
-        </ion-row>
+        </ion-row>  -->
         
         
       </div>
   </ion-grid>
-
-  <ul>
-    <li *ngFor="let product of produitsList">
-      {{ product.name }}
-    </li>
-  </ul>
-
-  <app-footer-menu></app-footer-menu>
-  
 </ion-content>
+  <!-- <app-footer-menu></app-footer-menu> -->

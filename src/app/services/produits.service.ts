@@ -8,10 +8,10 @@ import { Product } from 'src/models/products';
 
 export class ProduitsService{
   produitsList!: Product[];
-
   constructor(private httpService: HttpClient) { }
 
-  getProducts() {
+  getProduits(){
     return this.httpService.get<Product[]>('../../assets/data/products.json');
   }
+
 }
