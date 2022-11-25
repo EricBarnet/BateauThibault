@@ -1,0 +1,16 @@
+<ion-tabs>
+  <ion-tab-bar slot="bottom" (click)="onGoToHome()">
+    <ion-tab-button tab="Home">
+      <ion-icon name="home-outline"></ion-icon>
+      <ion-label>Accueil</ion-label>
+    </ion-tab-button>
+
+    <ion-label class="titre-footer-menu">Le bateau de Thibault</ion-label>
+
+    <ion-tab-button tab="Bag-Handle" (click)="onGoToPanier()">
+      <ion-icon name="bag-handle-outline"></ion-icon>
+      <ion-label>Panier</ion-label>
+      <ion-badge>0</ion-badge>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

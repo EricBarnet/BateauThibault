@@ -1,0 +1,57 @@
+
+<ion-content>
+    <ion-grid>
+      <div class="bateaux bateaux-titre ion-text-center">
+        <ion-row>
+          <ion-col></ion-col>
+          <ion-col size="8">
+            <h1 class="titre">
+              Choissisez vos produits
+            </h1>
+          </ion-col>
+          <ion-col></ion-col>
+        </ion-row>
+      </div>
+      <div class="bateaux bateaux-button ion-text-center">
+        <ion-row class="ion-margin-top">
+          <ion-col></ion-col>
+          <ion-col size="4">
+            <ion-button expand="block">Poisson 1        3e</ion-button>
+          </ion-col>
+          <ion-col></ion-col> 
+        </ion-row>
+        
+        <ion-row>
+          <ion-col></ion-col>  
+        <ion-col size="4"><ion-button expand="block">Poisson 2       25e</ion-button>
+        </ion-col>
+          <ion-col></ion-col>
+       </ion-row>
+        <ion-row>
+          <ion-col></ion-col>
+          <ion-col size="4">
+            <ion-button expand="block">Poisson 3     5e</ion-button>
+
+          </ion-col>
+          <ion-col></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col></ion-col>
+          <ion-col size="4"><ion-button expand="block">Poisson 4     10e</ion-button>
+          </ion-col>
+          <ion-col></ion-col>
+        </ion-row>
+        
+        
+      </div>
+  </ion-grid>
+
+  <ul>
+    <li *ngFor="let product of produitsList">
+      {{ product.name }}
+    </li>
+  </ul>
+
+  <app-footer-menu></app-footer-menu>
+  
+</ion-content>
