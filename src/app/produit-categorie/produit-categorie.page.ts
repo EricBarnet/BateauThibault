@@ -43,10 +43,10 @@ export class ProduitCategoriePage implements OnInit {
 
   getProductsById(id: number){
     var produitCategorie = [];
-    console.log(id);
+    // console.log(id);
     for(let p of this.produitsList){
-      console.log("entree dans le for");
-      console.log(p.category);
+      // console.log("entree dans le for");
+      // console.log(p.category);
       if(id == p.category){
         console.log("test");
         produitCategorie.push(p);

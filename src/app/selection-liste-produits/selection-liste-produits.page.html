@@ -5,5 +5,7 @@
 </ion-header>
 
 <ion-content>
-
+  <ion-grid>
+    <ion-button *ngFor="let categorieproduit of produitsList" (click)="onCart(categorieproduit.id)">{{ categorieproduit.name }} {{ categorieproduit.price}}€</ion-button>
+  </ion-grid>
 </ion-content>

@@ -8,7 +8,7 @@ import { ProduitsService } from '../services/produits.service';
   styleUrls: ['./selection-liste-produits.page.scss'],
 })
 export class SelectionListeProduitsPage implements OnInit {
-
+  listPanier: Product[] = [];
   produitsList!: Product[];
   constructor(private route: ActivatedRoute, private service:ProduitsService, private router: Router) { }
 
@@ -19,6 +19,18 @@ export class SelectionListeProduitsPage implements OnInit {
         console.log(this.produitsList);
       }
     });
+  }
+  onCart(produitId: number){
+    console.log(produitId); 
+    for(let p of this.produitsList){
+      console.log("entree du for")
+      if(produitId == p.id){
+        console.log("panier add produit");
+        this.listPanier.push(p);
+      }
+    }
+    console.log(this.listPanier);
+    return this.listPanier;
   }
 
 }
