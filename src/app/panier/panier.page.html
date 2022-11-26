@@ -5,6 +5,6 @@
 </ion-header>
 
 <ion-content>
-  
-<app-footer-menu></app-footer-menu>
+  <ion-button *ngFor="let listePanier of contenuPanier">{{listePanier.name}} {{listePanier.price}}€
+  </ion-button>
 </ion-content>

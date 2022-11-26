@@ -1,17 +1,31 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ActivatedRoute, NavigationExtras, Router } from '@angular/router';
+import { Panier } from 'src/models/panier';
 import { Product } from 'src/models/products';
 import { ProduitsService } from '../services/produits.service';
+import { PanierPage } from '../panier/panier.page';
+
 @Component({
   selector: 'app-selection-liste-produits',
   templateUrl: './selection-liste-produits.page.html',
   styleUrls: ['./selection-liste-produits.page.scss'],
 })
 export class SelectionListeProduitsPage implements OnInit {
-  listPanier: Product[] = [];
+  listPanier: Panier[] = [];
+  contenuPanier!: Panier[];
   produitsList!: Product[];
   constructor(private route: ActivatedRoute, private service:ProduitsService, private router: Router) { }
-
+  
+  voirPanier() {
+    console.log(this.listPanier);
+    let navigationExtras: NavigationExtras = {
+      state: {
+        contenuPanier: this.listPanier
+      }
+    };
+    this.router.navigate(['/panier'], navigationExtras);
+  }
+  
   ngOnInit() {
     this.route.queryParams.subscribe(params => {
       if (this.router.getCurrentNavigation()!.extras.state) {
@@ -20,6 +34,10 @@ export class SelectionListeProduitsPage implements OnInit {
       }
     });
   }
+
+  
+
+
   onCart(produitId: number){
     console.log(produitId); 
     for(let p of this.produitsList){
@@ -32,5 +50,5 @@ export class SelectionListeProduitsPage implements OnInit {
     console.log(this.listPanier);
     return this.listPanier;
   }
-
+  
 }
