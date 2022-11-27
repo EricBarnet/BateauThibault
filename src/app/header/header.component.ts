@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
   }
 
   onGoToHome(){
-    this.router.navigate(['/home']);
+    this.router.navigate(['/tab-bar/home']);
   }
 
   ngOnInit() {}

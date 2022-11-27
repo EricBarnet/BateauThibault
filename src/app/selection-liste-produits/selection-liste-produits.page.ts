@@ -23,7 +23,7 @@ export class SelectionListeProduitsPage implements OnInit {
         contenuPanier: this.listPanier
       }
     };
-    this.router.navigate(['/panier'], navigationExtras);
+    this.router.navigate(['/tab-bar/panier'], navigationExtras);
   }
   
   ngOnInit() {

@@ -13,22 +13,22 @@ export class HomePage {
   }
   
   onGoToBateaux(){
-    this.router.navigate(['/bateaux']);
+    this.router.navigate(['/tab-bar/bateaux']);
   }
 
   onGoToContact(){
-    this.router.navigate(['/contact']);
+    this.router.navigate(['/tab-bar/contact']);
   }
 
   onGoToListeRecettes(){
-    this.router.navigate(['/liste-recettes']);
+    this.router.navigate(['/tab-bar/liste-recettes']);
   }
 
   onGoToListeRestaurants(){
-    this.router.navigate(['/liste-restaurants']);
+    this.router.navigate(['/tab-bar/liste-restaurants']);
   }
 
   onGoToProduitCategorie(){
-    this.router.navigate(['/produit-categorie']);
+    this.router.navigate(['/tab-bar/produit-categorie']);
   }
 }

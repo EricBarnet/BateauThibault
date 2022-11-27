@@ -38,7 +38,7 @@ export class ProduitCategoriePage implements OnInit {
         produitsByIdCategorie: listeProduitById
        }
     };
-    this.router.navigate(['/selection-liste-produits'], navigationExtras);
+    this.router.navigate(['/tab-bar/selection-liste-produits'], navigationExtras);
   }
 
   getProductsById(id: number){
