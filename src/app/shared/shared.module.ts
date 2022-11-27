@@ -6,15 +6,14 @@ import { IonicModule } from "@ionic/angular";
 //import des components
 import { InformationContactComponent } from "../information-contact/information-contact.component";
 import { HeaderComponent } from "../header/header.component";
-import { FooterMenuComponent } from "../footer-menu/footer-menu.component";
 
 @NgModule({
-    declarations: [InformationContactComponent, HeaderComponent, FooterMenuComponent],
+    declarations: [InformationContactComponent, HeaderComponent],
     imports: [
         CommonModule,
         IonicModule
     ],
-    exports: [InformationContactComponent, HeaderComponent, FooterMenuComponent]
+    exports: [InformationContactComponent, HeaderComponent]
 })
 
 export class SharedModule {}
