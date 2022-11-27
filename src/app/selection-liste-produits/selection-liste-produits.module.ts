@@ -8,12 +8,15 @@ import { SelectionListeProduitsPageRoutingModule } from './selection-liste-produ
 
 import { SelectionListeProduitsPage } from './selection-liste-produits.page';
 
+import { SharedModule } from '../shared/shared.module';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    SelectionListeProduitsPageRoutingModule
+    SelectionListeProduitsPageRoutingModule,
+    SharedModule
   ],
   declarations: [SelectionListeProduitsPage]
 })
