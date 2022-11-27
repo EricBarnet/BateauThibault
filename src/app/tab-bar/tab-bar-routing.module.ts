@@ -7,6 +7,11 @@ import { TabBarPage } from './tab-bar.page';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: 'tab-bar/home',
+    pathMatch: 'full',
+  },
+  {
     path: 'tab-bar',
     component: TabBarPage,
     children: [
@@ -122,9 +127,9 @@ const routes: Routes = [
           {
             path: '',
             loadChildren: () =>
-              import('../selection-liste-produits/selection-liste-produits.module').then(
-                (m) => m.SelectionListeProduitsPageModule
-              ),
+              import(
+                '../selection-liste-produits/selection-liste-produits.module'
+              ).then((m) => m.SelectionListeProduitsPageModule),
           },
         ],
       },
@@ -134,17 +139,11 @@ const routes: Routes = [
           {
             path: '',
             loadChildren: () =>
-              import('../panier/panier.module').then(
-                (m) => m.PanierPageModule
-              ),
+              import('../panier/panier.module').then((m) => m.PanierPageModule),
           },
         ],
       },
     ],
-  },
-  {
-    path: '**',
-    component: HomePage,
   },
 ];
 
