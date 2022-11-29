@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-liste-restaurants',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListeRestaurantsPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+  onGoToUnRestaurant(){
+    this.router.navigate(['/tab-bar/un-restaurant']);
+  }
 
   ngOnInit() {
   }

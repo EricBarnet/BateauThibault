@@ -8,12 +8,15 @@ import { UneRecettePageRoutingModule } from './une-recette-routing.module';
 
 import { UneRecettePage } from './une-recette.page';
 
+import { SharedModule } from '../shared/shared.module';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    UneRecettePageRoutingModule
+    UneRecettePageRoutingModule,
+    SharedModule
   ],
   declarations: [UneRecettePage]
 })

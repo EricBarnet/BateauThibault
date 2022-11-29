@@ -9,6 +9,8 @@ export class UnRestaurantPage implements OnInit {
 
   constructor() { }
 
+  titre = "Bistrot des Gascons";
+
   ngOnInit() {
   }
 

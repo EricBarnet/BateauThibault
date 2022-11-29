@@ -8,12 +8,15 @@ import { UnBateauPageRoutingModule } from './un-bateau-routing.module';
 
 import { UnBateauPage } from './un-bateau.page';
 
+import { SharedModule } from '../shared/shared.module';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    UnBateauPageRoutingModule
+    UnBateauPageRoutingModule,
+    SharedModule
   ],
   declarations: [UnBateauPage]
 })
