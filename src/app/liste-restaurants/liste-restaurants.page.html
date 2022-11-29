@@ -1,27 +1,55 @@
 <app-header></app-header>
 
 <ion-content>
-  <ion-title class="titre ion-text-center">
-    restaurants partenaires
-  </ion-title>
+  <ion-title class="titre ion-text-center"> restaurants partenaires </ion-title>
 
-  <ion-text class="titre ion-text-center"  color="secondary">
-    <h2 class="t2">Tous les restaurants partenaires avec le Bateau de Thibault</h2>
+  <ion-text class="titre ion-text-center" color="secondary">
+    <h2 class="t2">
+      Tous les restaurants partenaires avec le Bateau de Thibault
+    </h2>
   </ion-text>
   <app-information-contact></app-information-contact>
-  
-<div class="btn-row">
-  <div>
-    <ion-button class="" color="secondary">Bistrot des Gascons</ion-button>
-    <ion-button class="" color="primary">Les fous de l'ile</ion-button>
-  </div>
-  <div class="row">
-    <ion-button class="" color="tertiary">Bistrot Landais</ion-button>
-    <ion-button class="" color="success">Villa 9-Trois</ion-button>
-  </div>
-  <div class="row">
-    <ion-button class="" color="medium">Bistrot du Sommelier</ion-button>
-    <ion-button class="" color="warning">Devenez partenaire!</ion-button>
-  </div>
-</div>
+
+  <ion-grid>
+    <div class="bateaux bateaux-button ion-text-center">
+      <ion-row class="ion-margin-top">
+        <ion-col></ion-col>
+        <ion-col size="4">
+          <ion-button color="secondary" expand="block"
+            >Bistrot des Gascons</ion-button
+          >
+        </ion-col>
+        <ion-col size="4"
+          ><ion-button color="primary" expand="block"
+            >Les fous de l'ile</ion-button
+          >
+        </ion-col>
+        <ion-col></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col></ion-col>
+        <ion-col size="4">
+          <ion-button color="danger" expand="block">Bistrot Landais</ion-button>
+        </ion-col>
+        <ion-col size="4"
+          ><ion-button color="success" expand="block">Villa 9-Trois</ion-button>
+        </ion-col>
+        <ion-col></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col></ion-col>
+        <ion-col size="4">
+          <ion-button color="medium" expand="block"
+            >Bistrot du Sommelier</ion-button
+          >
+        </ion-col>
+        <ion-col size="4"
+          ><ion-button class="partenaire" color="warning" expand="block"
+            >Devenez partenaire</ion-button
+          >
+        </ion-col>
+        <ion-col></ion-col>
+      </ion-row>
+    </div>
+  </ion-grid>
 </ion-content>

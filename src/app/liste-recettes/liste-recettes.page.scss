@@ -1,12 +1,18 @@
-.t2{
-    margin-top: 200px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Qahiri&display=swap');
 
-.btn-row{
-    margin-top: 100px;
-    margin-left: 700px;
+@media only screen and (max-width: 600px) {
+    .listerecettes-content{
+        margin-top:50%;
+    }
+    .listerecettes-button{
+        margin-top:50%;
+    }
 }
-
-ion-button{
-    width: 300px;
+@media only screen and (min-width: 768px) {
+    .listerecettes-content{
+        margin-top:10%;
+    }
+    .listerecettes-button{
+        margin-top:10%;
+    }
 }

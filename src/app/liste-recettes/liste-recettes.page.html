@@ -2,28 +2,57 @@
 
 <ion-content>
   <ion-grid>
-  <ion-title class="titre ion-text-center">
-    Nos recettes
-  </ion-title>
-
-  <ion-text class="titre ion-text-center"  color="secondary">
-    <h2 class="t2">Toutes les recettes du Bateau de Thibault</h2>
-  </ion-text>
-  <app-information-contact></app-information-contact>
-  
-<div class="btn-row">
-  <div>
-    <ion-button class="" color="secondary">Hommard</ion-button>
-    <ion-button class="" color="primary">St Jacques</ion-button>
-  </div>
-  <div class="row">
-    <ion-button class="" color="tertiary">Bar</ion-button>
-    <ion-button class="" color="success">Tourteau</ion-button>
-  </div>
-  <div class="row">
-    <ion-button class="" color="medium">Recette x </ion-button>
-    <ion-button class="" color="warning">Recette y</ion-button>
-  </div>
-</div>
-</ion-grid>
+    <div class="listerecettes listerecettes-titre ion-text-center">
+      <ion-row>
+        <ion-col></ion-col>
+        <ion-col size="8">
+          <h1 class="titre">Nos recettes</h1>
+        </ion-col>
+        <ion-col></ion-col>
+      </ion-row>
+    </div>
+    <div class="listerecettes listerecettes-content">
+      <ion-row class="ion-margin-top">
+        <ion-col></ion-col>
+        <ion-col size="8">
+          <ion-text class="ion-text-center">
+            <app-information-contact></app-information-contact>
+          </ion-text>
+        </ion-col>
+        <ion-col></ion-col>
+      </ion-row>
+    </div>
+    <div class="listerecettes listerecettes-button ion-text-center">
+      <ion-row class="ion-margin-top">
+        <ion-col></ion-col>
+        <ion-col size="4">
+          <ion-button color="primary" expand="block">Homard</ion-button>
+        </ion-col>
+        <ion-col size="4"
+          ><ion-button color="secondary" expand="block">St-Jacques</ion-button>
+        </ion-col>
+        <ion-col></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col></ion-col>
+        <ion-col size="4">
+          <ion-button color="tertiary" expand="block">Bar</ion-button>
+        </ion-col>
+        <ion-col size="4"
+          ><ion-button color="success" expand="block">Tourteau</ion-button>
+        </ion-col>
+        <ion-col></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col></ion-col>
+        <ion-col size="4">
+          <ion-button color="warning" expand="block">Recette x</ion-button>
+        </ion-col>
+        <ion-col size="4"
+          ><ion-button color="danger" expand="block">Recette y</ion-button>
+        </ion-col>
+        <ion-col></ion-col>
+      </ion-row>
+    </div>
+  </ion-grid>
 </ion-content>

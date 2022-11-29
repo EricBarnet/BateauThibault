@@ -1,14 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Qahiri&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Qahiri&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Share:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
-.t2{
-    margin-top: 200px;
+@media only screen and (max-width: 600px) {
+  .bateaux-content {
+    margin-top: 50%;
+  }
+  .bateaux-button {
+    margin-top: 50%;
+  }
+  .partenaire {
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+  }
 }
-
-.btn-row{
-    margin-top: 100px;
-    margin-left: 700px;
-}
-
-ion-button{
-    width: 300px;
+@media only screen and (min-width: 768px) {
+  .bateaux-content {
+    margin-top: 10%;
+  }
+  .bateaux-button {
+    margin-top: 10%;
+  }
+  .partenaire {
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+  }
 }
