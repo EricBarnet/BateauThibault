@@ -1,3 +1,5 @@
+//ATTENTION : IL FAUT BIEN CHANGER LE TAB-BAR.MODULE LES LIENS VERS LES FICHIERS PAR RAPPORT A OU SE TROUVER LES DOSSIERS DANS VOTRE PC LOCAL
+
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
